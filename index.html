@@ -31,14 +31,16 @@
 
 <body class="bg-[#010313] min-h-screen font-poppins">
     <main class="min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center">
-        <section class="text-center">
+        <!-- home section -->
+        <section id="home-screen" class="text-center">
             <div class="min-h-screen flex flex-col justify-center items-center">
                 <h3 class="font-anton text-[170px] text-white">ALPHABET CLASH</h3>
                 <P class="text-white text-2xl mb-14">Unleash Your Keyboard Kung Fu : Press "Enter" To Play</P>
                 <button onclick="play()" class="btn bg-white text-black text-2xl w-44">Play Now</button>
             </div>
         </section>
-        <section class="play-ground hidden">
+        <!-- play ground section -->
+        <section id="play-ground" class="hidden">
             <div class="flex flex-col items-center gap-14">
                 <!-- screen -->
                 <div class="mt-14">
@@ -48,44 +50,44 @@
                                 playing...</p>
                         </div>
                         <div class="flex justify-center h-full items-center">
-                            <p class="font-bold text-9xl">Y</p>
+                            <p id="current-alphabet" class="font-bold text-9xl uppercase">Y</p>
                         </div>
                     </div>
                 </div>
                 <!-- keyboard -->
                 <div>
                     <div class="flex justify-center gap-3 my-3 w-full">
-                        <kbd class="kbd w-14 h-14 text-xl font-medium">q</kbd>
-                        <kbd class="kbd w-14 h-14 text-xl font-medium">w</kbd>
-                        <kbd class="kbd w-14 h-14 text-xl font-medium">e</kbd>
-                        <kbd class="kbd w-14 h-14 text-xl font-medium">r</kbd>
-                        <kbd class="kbd w-14 h-14 text-xl font-medium">t</kbd>
-                        <kbd class="kbd w-14 h-14 text-xl font-medium">y</kbd>
-                        <kbd class="kbd w-14 h-14 text-xl font-medium">u</kbd>
-                        <kbd class="kbd w-14 h-14 text-xl font-medium">i</kbd>
-                        <kbd class="kbd w-14 h-14 text-xl font-medium">o</kbd>
-                        <kbd class="kbd w-14 h-14 text-xl font-medium">p</kbd>
+                        <kbd id="q" class="kbd w-14 h-14 text-xl font-medium">q</kbd>
+                        <kbd id="w" class="kbd w-14 h-14 text-xl font-medium">w</kbd>
+                        <kbd id="e" class="kbd w-14 h-14 text-xl font-medium">e</kbd>
+                        <kbd id="r" class="kbd w-14 h-14 text-xl font-medium">r</kbd>
+                        <kbd id="t" class="kbd w-14 h-14 text-xl font-medium">t</kbd>
+                        <kbd id="y" class="kbd w-14 h-14 text-xl font-medium">y</kbd>
+                        <kbd id="u" class="kbd w-14 h-14 text-xl font-medium">u</kbd>
+                        <kbd id="i" class="kbd w-14 h-14 text-xl font-medium">i</kbd>
+                        <kbd id="o" class="kbd w-14 h-14 text-xl font-medium">o</kbd>
+                        <kbd id="p" class="kbd w-14 h-14 text-xl font-medium">p</kbd>
                     </div>
                     <div class="flex justify-center gap-3 my-3 w-full">
-                        <kbd class="kbd w-14 h-14 text-xl font-medium">a</kbd>
-                        <kbd class="kbd w-14 h-14 text-xl font-medium">s</kbd>
-                        <kbd class="kbd w-14 h-14 text-xl font-medium">d</kbd>
-                        <kbd class="kbd w-14 h-14 text-xl font-medium">f</kbd>
-                        <kbd class="kbd w-14 h-14 text-xl font-medium">g</kbd>
-                        <kbd class="kbd w-14 h-14 text-xl font-medium">h</kbd>
-                        <kbd class="kbd w-14 h-14 text-xl font-medium">j</kbd>
-                        <kbd class="kbd w-14 h-14 text-xl font-medium">k</kbd>
-                        <kbd class="kbd w-14 h-14 text-xl font-medium">l</kbd>
+                        <kbd id="a" class="kbd w-14 h-14 text-xl font-medium">a</kbd>
+                        <kbd id="s" class="kbd w-14 h-14 text-xl font-medium">s</kbd>
+                        <kbd id="d" class="kbd w-14 h-14 text-xl font-medium">d</kbd>
+                        <kbd id="f" class="kbd w-14 h-14 text-xl font-medium">f</kbd>
+                        <kbd id="g" class="kbd w-14 h-14 text-xl font-medium">g</kbd>
+                        <kbd id="h" class="kbd w-14 h-14 text-xl font-medium">h</kbd>
+                        <kbd id="j" class="kbd w-14 h-14 text-xl font-medium">j</kbd>
+                        <kbd id="k" class="kbd w-14 h-14 text-xl font-medium">k</kbd>
+                        <kbd id="l" class="kbd w-14 h-14 text-xl font-medium">l</kbd>
                     </div>
                     <div class="flex justify-center gap-3 my-3 w-full">
-                        <kbd class="kbd w-14 h-14 text-xl font-medium">z</kbd>
-                        <kbd class="kbd w-14 h-14 text-xl font-medium">x</kbd>
-                        <kbd class="kbd w-14 h-14 text-xl font-medium">c</kbd>
-                        <kbd class="kbd w-14 h-14 text-xl font-medium">v</kbd>
-                        <kbd class="kbd w-14 h-14 text-xl font-medium">b</kbd>
-                        <kbd class="kbd w-14 h-14 text-xl font-medium">n</kbd>
-                        <kbd class="kbd w-14 h-14 text-xl font-medium">m</kbd>
-                        <kbd class="kbd w-14 h-14 text-xl font-medium">/</kbd>
+                        <kbd id="z" class="kbd w-14 h-14 text-xl font-medium">z</kbd>
+                        <kbd id="x" class="kbd w-14 h-14 text-xl font-medium">x</kbd>
+                        <kbd id="c" class="kbd w-14 h-14 text-xl font-medium">c</kbd>
+                        <kbd id="v" class="kbd w-14 h-14 text-xl font-medium">v</kbd>
+                        <kbd id="b" class="kbd w-14 h-14 text-xl font-medium">b</kbd>
+                        <kbd id="n" class="kbd w-14 h-14 text-xl font-medium">n</kbd>
+                        <kbd id="m" class="kbd w-14 h-14 text-xl font-medium">m</kbd>
+                        <kbd id="," class="kbd w-14 h-14 text-xl font-medium">,</kbd>
                     </div>
                 </div>
                 <!-- score -->
@@ -107,7 +109,8 @@
             </div>
         </section>
     </main>
-    <script src="index.js"></script>
+    <script src="script/utility.js"></script>
+    <script src="script/index.js"></script>
 </body>
 
 </html>
