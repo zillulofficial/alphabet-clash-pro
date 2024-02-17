@@ -92,19 +92,22 @@
                 </div>
                 <!-- score -->
                 <div class="w-3/5 flex justify-between">
+                    <!-- life button -->
                     <button class="btn bg-[#894189] border-none text-white rounded-full">Life
-                        <img src="images/heart.svg" alt=""><span>1</span>
+                        <img src="images/heart.svg" alt=""><span id="current-life">5</span>
                     </button>
+                    <!-- score button -->
                     <button class="btn bg-[#360490] border-none text-white rounded-full">Score
-                        <img src="images/dollar.svg" alt=""><span>1</span>
+                        <img src="images/dollar.svg" alt=""><span id="current-score">0</span>
                     </button>
                 </div>
             </div>
         </section>
-        <section class="score min-h-screen flex justify-center items-center hidden">
+        <section id="score-card" class="min-h-screen flex justify-center items-center hidden">
             <div class="bg-[#ffffff33] p-8 w-96 rounded-2xl text-center space-y-7">
-                    <h3 class="text-6xl text-white font-extrabold">Score : <span>14</span></h3>
-                    <button class="btn bg-white text-black text-2xl font-semibold">Play Again</button>
+                <h2 class="text-3xl text-white">Game Over!</h2>
+                    <h3 class="text-6xl text-white font-extrabold">Score : <span id="last-score">0</span></h3>
+                    <button onclick="play()" class="btn bg-white text-black text-2xl font-semibold">Play Again</button>
                     <p class="text-[20px] text-white font-medium">Practice will make you Pro</p>
             </div>
         </section>
